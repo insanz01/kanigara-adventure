@@ -10,7 +10,7 @@
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 col-md-6">
                 <div class="offer_img">
-                    <img src="<?= base_url("assets/") ?>img/logo_kanigara.png" alt="">
+                    <img src="<?= base_url("assets/") ?>img/kanigara_logo.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -62,6 +62,7 @@
                                         <h6>Sisa <?= $data['jumlah'] ?></h6>
                                         <h5>Harga Rp <?= number_format($data['harga'], 0, ',', '.') ?> / 3 hari</h5>
                                         <a href="https://wa.me/6281254945805?text=halo%20admin%20kanigara,%20saya%20ingin%20booking%20<?= $data['nama_produk'] ?>" target="_blank" class="add_cart">+ hubungi kami</a>
+                                        <a href="<?= base_url("product/detail/") . $data['id'] ?>" class="add_cart">+ detail</a>
                                     </div>
                                 </div>
                             </div>

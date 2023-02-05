@@ -20,4 +20,14 @@ class AppController extends CI_Controller {
     $this->load->view("app/landing", $data);
     $this->load->view("templates/footer");
   }
+
+  public function detail($id) {
+    $id_cabang = $this->info_m->get_cabang_id();
+    $data['katalog'] = $this->katalog_m->get_detail($id_cabang, $id);
+
+    $this->load->view("templates/header");
+    $this->load->view("templates/navbar");
+    $this->load->view("app/product_detail", $data);
+    $this->load->view("templates/footer");
+  }
 }
