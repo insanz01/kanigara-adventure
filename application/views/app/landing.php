@@ -59,7 +59,8 @@
                                     <img src="http://localhost/kanigara-adventure-admin/uploads/image/<?= $data['foto_produk'] ?>" class="img-size" alt="">
                                     <div class="single_product_text">
                                         <h4><?= $data['nama_produk'] ?></h4>
-                                        <h3><?= ($data['jumlah'] > 0) ? "Tersedia": "Habis" ?></h3>
+                                        <h6>Sisa <?= $data['jumlah'] ?></h6>
+                                        <h5>Harga Rp <?= number_format($data['harga'], 0, ',', '.') ?> / 3 hari</h5>
                                         <a href="https://wa.me/6281254945805?text=halo%20admin%20kanigara,%20saya%20ingin%20booking%20<?= $data['nama_produk'] ?>" target="_blank" class="add_cart">+ hubungi kami</a>
                                     </div>
                                 </div>
