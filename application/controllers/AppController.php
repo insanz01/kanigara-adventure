@@ -3,12 +3,21 @@
 class AppController extends CI_Controller {
   public function __construct() {
     parent::__construct();
+
+    $this->load->model("KatalogModel", "katalog_m");
+    $this->load->model("InfoModel", "info_m");
+    $this->load->model("CabangModel", "cabang_m");
   }
 
   public function index() {
+    $id_cabang = $this->info_m->get_cabang_id();
+
+    $data['cabang'] = $this->cabang_m->get_cabang_info($id_cabang);
+    $data['katalog'] = $this->katalog_m->get_all($id_cabang);
+
     $this->load->view("templates/header");
     $this->load->view("templates/navbar");
-    $this->load->view("app/landing");
+    $this->load->view("app/landing", $data);
     $this->load->view("templates/footer");
   }
 }
