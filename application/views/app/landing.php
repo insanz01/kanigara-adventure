@@ -10,7 +10,7 @@
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 col-md-6">
                 <div class="offer_img">
-                    <img src="<?= base_url("assets/") ?>img/offer_img.png" alt="">
+                    <img src="<?= base_url("assets/") ?>img/logo_kanigara.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
