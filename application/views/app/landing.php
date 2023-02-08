@@ -61,7 +61,7 @@
                                         <h4><?= $data['nama_produk'] ?></h4>
                                         <h6>Sisa <?= $data['jumlah'] ?></h6>
                                         <h5>Harga Rp <?= number_format($data['harga'], 0, ',', '.') ?> / 3 hari</h5>
-                                        <a href="https://wa.me/6281254945805?text=halo%20admin%20kanigara,%20saya%20ingin%20booking%20<?= $data['nama_produk'] ?>" target="_blank" class="add_cart">+ hubungi kami</a>
+                                        <a href="https://wa.me/6281254945805?text=halo%20admin%20kanigara,%20saya%20ingin%20booking%20<?= $data['nama_produk'] ?>%20[<?= $data['kode_produk'] ?>]" target="_blank" class="add_cart">+ hubungi kami</a>
                                         <a href="<?= base_url("product/detail/") . $data['id'] ?>" class="add_cart">+ detail</a>
                                     </div>
                                 </div>

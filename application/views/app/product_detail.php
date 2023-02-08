@@ -42,7 +42,7 @@
                 <input class="input-number" type="text" value="1" min="0" max="10">
                 <span class="number-increment"> <i class="ti-plus"></i></span>
               </div> -->
-              <a href="https://wa.me/6281254945805?text=halo%20admin%20kanigara,%20saya%20ingin%20booking%20<?= $katalog['nama_produk'] ?>" class="btn_3">Hubungi Kami</a>
+              <a href="https://wa.me/6281254945805?text=halo%20admin%20kanigara,%20saya%20ingin%20booking%20<?= $katalog['nama_produk'] ?>%20[<?= $katalog['kode_produk'] ?>]" class="btn_3">Hubungi Kami</a>
               <!-- <a href="#" class="like_us"> <i class="ti-heart"></i> </a> -->
             </div>
           </div>
