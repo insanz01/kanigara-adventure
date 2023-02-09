@@ -24,6 +24,7 @@ class AppController extends CI_Controller {
   public function detail($id) {
     $id_cabang = $this->info_m->get_cabang_id();
     $data['katalog'] = $this->katalog_m->get_detail($id_cabang, $id);
+    $data['gambar_produk'] = $this->produk_m->get_gambar($id);
 
     $this->load->view("templates/header");
     $this->load->view("templates/navbar");
