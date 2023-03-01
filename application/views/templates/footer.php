@@ -120,6 +120,8 @@
     <!-- swiper js -->
     <script src="<?= base_url("assets/") ?>js/swiper.min.js"></script>
     <!-- swiper js -->
+    <script src="<?= base_url("assets/") ?>js/lightslider.min.js"></script>
+    <!-- swiper js -->
     <script src="<?= base_url("assets/") ?>js/masonry.pkgd.js"></script>
     <!-- particles js -->
     <script src="<?= base_url("assets/") ?>js/owl.carousel.min.js"></script>

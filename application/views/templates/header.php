@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?= base_url("assets/") ?>css/animate.css">
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="<?= base_url("assets/") ?>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url("assets/") ?>css/lightslider.min.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="<?= base_url("assets/") ?>css/all.css">
     <!-- flaticon CSS -->

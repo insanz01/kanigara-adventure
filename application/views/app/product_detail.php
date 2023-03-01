@@ -5,22 +5,13 @@
           <div class="product_slider_img">
             <div id="vertical">
               <div data-thumb="http://localhost/kanigara-adventure-admin/uploads/image/<?= $katalog['foto_produk'] ?>">
-                <img src="http://localhost/kanigara-adventure-admin/uploads/image/<?= $katalog['foto_produk'] ?>" />
+                <img src="http://localhost/kanigara-adventure-admin/uploads/image/<?= $katalog['foto_produk'] ?>" width="425px" />
               </div>
               <?php foreach($gambar_produk as $gambar): ?>
                 <div data-thumb="http://localhost/kanigara-adventure-admin/uploads/image/<?= $gambar['url_gambar'] ?>">
-                  <img src="http://localhost/kanigara-adventure-admin/uploads/image/<?= $gambar['url_gambar'] ?>" />
+                  <img src="http://localhost/kanigara-adventure-admin/uploads/image/<?= $gambar['url_gambar'] ?>" width="425px" />
                 </div>
               <?php endforeach; ?>
-              <!-- <div data-thumb="img/product/single-product/product_1.png">
-                <img src="<?= base_url("assets/") ?>img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="<?= base_url("assets/") ?>img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="<?= base_url("assets/") ?>img/product/single-product/product_1.png" />
-              </div> -->
             </div>
           </div>
         </div>
