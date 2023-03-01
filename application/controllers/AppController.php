@@ -7,6 +7,7 @@ class AppController extends CI_Controller {
     $this->load->model("KatalogModel", "katalog_m");
     $this->load->model("InfoModel", "info_m");
     $this->load->model("CabangModel", "cabang_m");
+    $this->load->model("ProdukModel", "produk_m");
   }
 
   public function index() {
